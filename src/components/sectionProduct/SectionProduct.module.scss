@@ -1,0 +1,55 @@
+@import './../../assets/styles/scss/abstracts/variables';
+
+.SectionProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 338px;
+  height: 97px;
+  border: 1px solid #CDCDCD;
+  padding: 20px 10px 10px 20px;
+
+  &:active,
+  &:focus {
+    border: transparent;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border-radius: 3px;
+  }
+}
+
+.block {  
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 28px;
+  color: $textColor;
+  margin: 0;
+
+  &:hover {
+    color: $accentColor;
+  }
+}
+
+.link {
+  text-decoration: none;  
+
+  &:hover {
+    text-decoration: underline;
+    color: $textColorLight;
+  }
+
+  &__text {    
+    color: $textColorLight;
+    padding-right: 5px;
+  }
+
+  &__svg {    
+    fill: $textColorLight;
+  }
+}
