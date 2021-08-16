@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 function Content(props) {
   const StyledRating = withStyles({
     root: {
-      fontSize: '50px'
+      fontSize: '30px'
     },
 
     iconFilled: {
@@ -22,7 +22,7 @@ function Content(props) {
   return (
     <div className={s.Content}>
       <Products/>
-      <StyledRating readOnly defaultValue={4} size={"large"}/>
+      <StyledRating readOnly defaultValue={4}/>
 
     </div>      
   );
